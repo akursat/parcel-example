@@ -1,0 +1,45 @@
+{
+  "name": "parcel-example",
+  "version": "1.0.0",
+  "description": "An example of Parcel bundler with React.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "rm -rf ./dist/ ; parcel build --out-dir dist/ src/index.html",
+    "mockdb": "json-server --watch mock/db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akursat/parcel-example.git"
+  },
+  "keywords": [
+    "parcel",
+    "bundler",
+    "react"
+  ],
+  "author": "akursat",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/akursat/parcel-example/issues"
+  },
+  "homepage": "https://github.com/akursat/parcel-example#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.1",
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "sass": "^1.26.3"
+  },
+  "browserslist": [
+    "last 5 firefox versions",
+    "last 5 Chrome versions",
+    "last 2 edge versions",
+    "not dead"
+  ]
+}
